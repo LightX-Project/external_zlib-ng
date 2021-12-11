@@ -169,6 +169,9 @@ cc_defaults {
 cc_library {
     name: "libz",
     defaults: ["libz_defaults"],
+    header_abi_checker: {
+         enabled: false,
+     },
 
     host_supported: true,
     unique_host_soname: true,
